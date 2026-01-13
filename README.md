@@ -20,10 +20,10 @@
 
 ## 学习环境
 
-- Python 3.10
-- Django 5.2
+- Python > 3.10
+- Django 5.2.5
 - 数据库：
-- 操作系统：
+- 操作系统：WSL2 Ubuntu 22.04/MacOS
 - 编辑器：VSCode
 
 ## 学习路线
@@ -35,12 +35,16 @@
 - 启动开发服务器
 
 1. uv 初始化
+
 ```bash
 # uv 创建目录，初始化项目
 uv init
 
 # uv 安装软件添加虚拟环境
 uv add django
+
+# uv pip install
+uv pip install django==5.2.5
 
 # 激活虚拟环境
 source .venv/bin/activate
@@ -49,3 +53,6 @@ source .venv/bin/activate
 django-admin --version
 
 ```
+
+2. 启动Django项目
+
